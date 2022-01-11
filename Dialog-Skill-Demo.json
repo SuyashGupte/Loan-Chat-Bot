@@ -120,37 +120,6 @@
       "fuzzy_match": true
     },
     {
-      "entity": "ExistingSavings",
-      "values": [
-        {
-          "type": "synonyms",
-          "value": "100_to_500",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "500_to_1000",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "greater_1000",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "less_100",
-          "synonyms": []
-        },
-        {
-          "type": "synonyms",
-          "value": "unknown",
-          "synonyms": []
-        }
-      ],
-      "fuzzy_match": true
-    },
-    {
       "entity": "housing",
       "values": [
         {
@@ -421,7 +390,7 @@
   },
   "webhooks": [
     {
-      "url": "https://us-south.functions.appdomain.cloud/api/v1/web/b67936b7-350b-4020-a14b-a0c9687ff99d/default/CP4D%20Demo.json",
+      "url": "https://eu-gb.functions.appdomain.cloud/api/v1/web/2f7a2fed-cd09-4b61-9ad4-f97f7c6e05f7/default/Loan",
       "name": "main_webhook",
       "headers": []
     }
@@ -956,9 +925,9 @@
       "output": {},
       "parent": "slot_65_1626252692892",
       "context": {
-        "ExistingSaving": "@ExistingSavings"
+        "ExistingSaving": "@sys-number"
       },
-      "conditions": "@ExistingSavings",
+      "conditions": "@sys-number",
       "event_name": "input",
       "dialog_node": "handler_66_1626252692892"
     },
@@ -967,50 +936,13 @@
       "output": {
         "generic": [
           {
-            "title": "How much savings do you have currently?",
-            "options": [
+            "values": [
               {
-                "label": "less_100",
-                "value": {
-                  "input": {
-                    "text": "less_100"
-                  }
-                }
-              },
-              {
-                "label": "100_to_500",
-                "value": {
-                  "input": {
-                    "text": "100_to_500"
-                  }
-                }
-              },
-              {
-                "label": "500_to_1000",
-                "value": {
-                  "input": {
-                    "text": "500_to_1000"
-                  }
-                }
-              },
-              {
-                "label": "greater_1000",
-                "value": {
-                  "input": {
-                    "text": "greater_1000"
-                  }
-                }
-              },
-              {
-                "label": "unknown",
-                "value": {
-                  "input": {
-                    "text": "unknown"
-                  }
-                }
+                "text": "How much savings do you have currently?"
               }
             ],
-            "response_type": "option"
+            "response_type": "text",
+            "selection_policy": "sequential"
           }
         ]
       },
