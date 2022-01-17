@@ -419,29 +419,38 @@
         <div class="content">
           <details>
          <summary>Integrate the Machine Learning Model with Watson Assistant</summary>
-          <p>Step 1 : Go to <a href="cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Copy the API key and Assistant URL.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_7.png" width = "750" height= "750">
-          <p>Step 2 : Paste it in env file.</p>
-          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-skill%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/.env">Open file</a>
-          <p>Step 3 : Click on "Launch Watson Assistant" button.</p>
+          <p>Step 1 : Go to <a href="cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Click on "Launch Watson Assistant" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.1_launch_wa_1.png" width = "750" height= "750">
-          <p>Step 4 : Click on "Create assistant".</p>
+          <p>Step 2 : Click on "Create assistant".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.2_create_assistant_1.png" width = "750" height= "750">
-          <p>Step 5 : Give your assistant a name and click on "Create assistant".</p>
+          <p>Step 3 : Give your assistant a name and click on "Create assistant".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.3_create_assistant_2.png" width = "750" height= "750">
-          <p>Step 6 : Once your Assistant is created, click on "add an action or dialog skill".</p>
+          <p>Step 4 : Once your Assistant is created, click on "add an action or dialog skill".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.4_add_dialog_1.png" width = "750" height= "750">
-          <p>Step 7 : Load the Dialog Skill.</p>
+          <p>Step 5 : Load the Dialog Skill.</p>
           <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-skill%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/Dialog-Skill.json">Load Skill</a>
-          <p>Step 8 : Download the Dialog Skill.</p>
+          <p>Step 6 : Download the Dialog Skill.</p>
           <a class="button is-dark is-medium"title="Launch the Application" href="didact://?commandId=file.download">Download</a>
-          <p>Step 9 : Upload the skill you just downloaded. When you see that the skill file has been uploaded, click on "Upload" Button.</p>
+          <p>Step 7 : Upload the skill you just downloaded. When you see that the skill file has been uploaded, click on "Upload" Button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.5_create_dialog_2.png" width = "750" height= "750">
-          <p>Step 10 : Once the skill is created, click on (⋮) on top right and Click on "Assitant Settings".</p>
+          <p>Step 8 : Once the skill is created, click on (⋮) on top right and Click on "Assitant Settings".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_8.png" width = "750" height= "750">
           <p>Step 11 : Copy the Assitant_ID.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_9.png" width = "750" height= "750">
           <p>Step 12 : Paste it in env file.</p>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-skill%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/.env">Open file</a>
+          </details>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <details>
+         <summary>Configure the application</summary>
+           <p>Step 1 : Once the skill is created, click on (⋮) on top right and Click on "Assitant Settings".</p>
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_8.png" width = "750" height= "750">
+          <p>Step 2 : Copy the Assistant ID, Assistant URL and API key in env .file.</p>
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_10.png" width = "750" height= "750">
+          <p>Step 3 : Paste it in env file.</p>
           <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-skill%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/.env">Open file</a>
           </details>
         </div>
