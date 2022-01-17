@@ -39,7 +39,7 @@ let authenticator = new IamAuthenticator({
 var assistant = new AssistantV2({
   version: '2021-12-28',
   authenticator: authenticator,
-  url: process.env.ASSISTANT_URL,
+  url: process.env.ASSISTANT_URL.split('/v2')[0],
   disableSslVerification: process.env.DISABLE_SSL_VERIFICATION === 'true' ? true : false
 });
 
