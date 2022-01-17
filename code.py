@@ -44,7 +44,7 @@ def main(dic):
 		}
 	]
 }
-    response_scoring = requests.post('Add your machine learning deployment URL', json=payload_scoring, headers={'Authorization': 'Bearer ' + mltoken})
+    response_scoring = requests.post('model_url', json=payload_scoring, headers={'Authorization': 'Bearer ' + mltoken})
     print("Scoring response")
     print(response_scoring.json())
     result = response_scoring.text
