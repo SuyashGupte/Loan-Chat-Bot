@@ -382,21 +382,19 @@
         <div class="content">
           <details>
          <summary>Deploy Model and Get URL</summary>
-          <p>Step 1 : Once the model is successfully promoted, you will see a green notification box, click on “deployment space” in the notification. Alternatively, you can also find your deployment spaces when you click on the hamburger sign on the top left most side on your screen.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.1_deploy_1.png" width = "750" height= "750">
-          <p>Step 2 : Click on the deploymentspace you created and click on "New deployment" button.</p>
+          <p>Step 1 : Click on "New deployment" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.2_deploy_2.png" width = "750" height= "750">
-          <p>Step 3 : Select "Online", give your deployment a name and click on "Create" button.</p>
+          <p>Step 2 : Select "Online", give your deployment a name and click on "Create" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.3_deploy_3.png" width = "750" height= "750">
-          <p>Step 4 : Click on the deployment you just created.</p>
+          <p>Step 3 : Click on the deployment you just created.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_8.1_get_link_1.png" width = "750" height= "750">
-          <p>Step 5 : Copy the Model endpoint URL.</p>
+          <p>Step 4 : Copy the Model endpoint URL.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_8.2_get_link_2.png" width = "750" height= "750">
-          <p>Step 6 : Paste the URL in the follwing script file.</p>
+          <p>Step 5 : Paste the URL in the follwing script file.</p>
           <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Capi-key%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/scripts/add_model_url.sh">Open file</a>
-          <p>Step 7 : Run the script to update the code file.</p>
+          <p>Step 6 : Run the script to update the code file.</p>
           <a class="button is-dark is-medium" title="Update Model URL" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Ccreate-services%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant%20%26%26%20chmod%20%2Bx%20.%2Fscripts%2Fadd_model_url.sh%20%26%26%20.%2Fscripts%2Fadd_model_url.sh">Update Model URL</a>
-          <p>Step 8 : (Optional) To test your model, click on the “Test” tab. You can select a row from the data set and enter the data in the fields. Enter the values from the dataset, and then click on the “ Add to Predict” button at the bottom and then on "Predict".</p>
+          <p>Step 7 : (Optional) To test your model, click on the “Test” tab. You can select a row from the data set and enter the data in the fields. Enter the values from the dataset, and then click on the “ Add to Predict” button at the bottom and then on "Predict".</p>
           </details>
         </div>
       </div>
@@ -419,7 +417,7 @@
         <div class="content">
           <details>
          <summary>Integrate the Machine Learning Model with Watson Assistant</summary>
-          <p>Step 1 : Go to <a href="cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Click on "Launch Watson Assistant" button.</p>
+          <p>Step 1 : Go to <a href="https://cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Click on "Launch Watson Assistant" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.1_launch_wa_1.png" width = "750" height= "750">
           <p>Step 2 : Click on "Create assistant".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.2_create_assistant_1.png" width = "750" height= "750">
@@ -433,12 +431,6 @@
           <a class="button is-dark is-medium"title="Launch the Application" href="didact://?commandId=file.download">Download</a>
           <p>Step 7 : Upload the skill you just downloaded. When you see that the skill file has been uploaded, click on "Upload" Button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.5_create_dialog_2.png" width = "750" height= "750">
-          <p>Step 8 : Once the skill is created, click on (⋮) on top right and Click on "Assitant Settings".</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_8.png" width = "750" height= "750">
-          <p>Step 11 : Copy the Assitant_ID.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_9.png" width = "750" height= "750">
-          <p>Step 12 : Paste it in env file.</p>
-          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-skill%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/.env">Open file</a>
           </details>
         </div>
       </div>

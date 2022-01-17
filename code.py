@@ -25,7 +25,7 @@ def main(dic):
 				"N",
 				"P",
 				"K",
-				"temparature",
+				"temperature",
 				"humidity",
 				"pH",
 				"rainfall"
@@ -35,7 +35,7 @@ def main(dic):
 					dic["N"],
 					dic["P"],
 					dic["K"],
-					dic["temparature"],
+					dic["temperature"],
 					dic["humidity"],
 					dic["pH"],
 					dic["rainfall"]
@@ -56,7 +56,7 @@ def main(dic):
     result_dict = dict(zip(result_keys, result_vals[0]))
     
   
-    final = ('You should try planting' + result_vals[0][0] + ' as your next crop.')
+    final = ('You should try planting ' + result_vals[0][0] + ' as your next crop.')
     print("final: ", final)
     return { 'message': final }
     
