@@ -1,24 +1,36 @@
 {
-  "name": "loan-chat-bot",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@ibm-watson/assistant-simple",
+  "description": "A simple Node.js based web app which shows how to use the Watson Assistant API to recognize user intents.",
+  "version": "0.1.1",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SuyashGupte/Loan-Chat-Bot.git"
+    "url": "git+https://github.com/watson-developer-cloud/assistant-simple.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SuyashGupte/Loan-Chat-Bot/issues"
-  },
-  "homepage": "https://github.com/SuyashGupte/Loan-Chat-Bot#readme",
+  "license": "Apache-2.0",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  }
+    "body-parser": "^1.19.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "engineStrict": true,
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/assistant-simple/issues"
+  },
+  "homepage": "https://github.com/watson-developer-cloud/assistant-simple#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
 }

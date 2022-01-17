@@ -22,38 +22,23 @@ def main(dic):
 	"input_data": [
 		{
 			"fields": [
-				"LoanDuration",
-				"LoanPurpose",
-				"LoanAmount",
-				"ExistingSavings",
-				"EmploymentDuration",
-				"InstallmentPercent",
-				"OthersOnLoan",
-				"CurrentResidenceDuration",
-				"OwnsProperty",
-				"Age",
-				"InstallmentPlans",
-				"Housing",
-				"ExistingCreditsCount",
-				"Job"
+				"N",
+				"P",
+				"K",
+				"temparature",
+				"humidity",
+				"pH",
+				"rainfall"
 			],
 			"values": [
 				[
-					dic["LoanDuration"],
-					dic["LoanPurpose"],
-					dic["LoanAmount"],
-					dic["ExistingSavings"],
-					dic["EmploymentDuration"],
-					dic["InstallmentPercent"],
-					dic["OthersOnLoan"],
-					dic["CurrentResidenceDuration"],
-					dic["OwnsProperty"],
-					dic["Age"],
-					dic["InstallmentPlans"],
-					dic["Housing"],
-					dic["ExistingCreditsCount"],
-					dic["Job"]
-
+					dic["N"],
+					dic["P"],
+					dic["K"],
+					dic["temparature"],
+					dic["humidity"],
+					dic["pH"],
+					dic["rainfall"]
 				]
 			]
 		}
@@ -69,17 +54,9 @@ def main(dic):
     result_vals = result_json['predictions'][0]['values']
    
     result_dict = dict(zip(result_keys, result_vals[0]))
-  
-    no_percent = result_dict["probability"][0] * 100
-    print("no_percent: ", no_percent)
-    yes_percent = result_dict["probability"][1] * 100
-    print("yes_percent: ", yes_percent)
-    
-    predict = result_dict["prediction"]
     
   
-    
-    final = ('Your application is presenting a ' + predict + ' application with a risk probability of: %.0f%%'% yes_percent)
+    final = ('You should try planting' + result_vals[0][0] + ' as your next crop.')
     print("final: ", final)
     return { 'message': final }
     

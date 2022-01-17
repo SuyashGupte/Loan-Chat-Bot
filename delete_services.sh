@@ -1,3 +1,6 @@
+servicename="cp-cos"
+ibmcloud resource service-instance-delete $servicename -f
+
 servicename="cp-wstudio"
 ibmcloud resource service-instance-delete $servicename -f
 

@@ -246,9 +246,21 @@
     font-size: 20px;
     color: white;
   }
+  .subheading
+  {
+    margin-left: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: grey;
+  }
   .no-hover:hover
   {
     background-color: #0062FF !important;
+  }
+  .section{
+    margin-top: 5px;
+    margin-bottom:-50px;
   }
 }
 </style>
@@ -256,6 +268,9 @@
 <body>
   <div class="apptitle"> 
     Loan Smart Assistant
+  </div>
+  <div class="subheading">
+    Use Machine Learning in Virtual Assistants to automate Loan Applications.
   </div>
   <div class="header">
       <div class="right-content">
@@ -267,32 +282,56 @@
         </div>
      </div>
    </div>
+   <div class="section">
+    <p style="font-size:20px">Learning Resources</p>
+    <div class="content-">
+      <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=projects-creating-project">Create a new project in Cloud Paks for Data Platform.</a></br>
+      <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=data-adding-analytics-project">Add data to project in Cloud Paks for Data Platform.</a></br>
+      <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=functions-deployment-spaces">Create Deployment Spaces.</a>
+    </div>
+   </div>
+   <div class="section">
+      <p style="font-size:20px">Included Components</p>
+      <div class="content-">
+          <p>This sample application uses the following IBM Services:</p>
+          <p><a href="https://cloud.ibm.com/catalog/services/watson-assistant">Watson Assistant</a>: Watson Assistant lets you build conversational interfaces into any application, device, or channel.</p>
+          <p><a href="https://cloud.ibm.com/catalog/services/watson-studio">Watson Studio</a>: Develop sophisticated machine learning models using Notebooks and code-free tools to infuse AI throughout your business.</p>
+          <p><a href="https://cloud.ibm.com/catalog/services/machine-learning">Watson Machine Learning</a>: Deploy, manage and integrate machine learning models into your applications and services in as little as one click.</p>
+      </div>
+   </div>
+   <div class="section">
+   <p style="font-size:20px">Pre-requisites</p>
+    <div class="content-">
+    <p>IBM Cloud Account -  Do not have an IBM Cloud Account?<a href="https://cloud.ibm.com/registration"> click here</a> to create one for free.</p>
+    </div>
+   </div>
+    <div class="section">
+   <p style="font-size:20px">Instructions</p>
+   </div>
    <div class="timeline">
+   <div style="margin-top:0;"class="container right">
+            <div class="content">
+                <p>To begin, we'll need to open a terminal</p>
+                <a class="button is-dark is-medium" title="Open Terminal" href="didact://?commandId=terminal-for-nodejs-container:new">Open Terminal</a><br>
+            </div>
+        </div>
       <div class="container right" style="margin-top:0px;padding-top:0px;">
          <div class="content">
-            <p>To begin, you will need the application's source code. Click `Get the code` to clone the code to your playground session.</p>
-            <a class="button is-dark is-medium" title="Get the Code" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=loan$$git%20clone%20https://github.com/SuyashGupte/loan-chat-bot.git%20${CHE_PROJECTS_ROOT}/loan">Get the Code</a>
+            <p>You will need the application's source code. Click `Get the code` to clone the code to your playground session.</p>
+            <a class="button is-dark is-medium" title="Get the Code" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cclone-repo%7Cnodejs%20terminal|git%20clone%20https://github.com/SuyashGupte/loan-chat-bot.git%20${CHE_PROJECTS_ROOT}/loan">Get the Code</a>
          </div>
       </div>
       <div class="container right">
         <div class="content">
           <p>Create and Configure IBM Services</p>
-          <p>You need to be logged in to your IBM Cloud account in the Developer Playground to create and configure services.</p>
-          <a class="button is-dark is-medium" title="Login to IBM Cloud" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=loan$$ibmcloud%20login%20%26%26%20ibmcloud%20target%20--cf%20%26%26%20ibmcloud%20target%20-g%20Default">Login to IBM Cloud</a>
-          <p style="margin-top:10px;">Do not have an IBM Cloud Account?<a href="https://cloud.ibm.com/registration">click here</a> to create one for free.</p>
-        </div>
-      </div>
-      <div class="container right">
-        <div class="content">
-          <p>This sample application uses the following IBM Services:</p>
-          <p><a href="https://cloud.ibm.com/catalog/services/watson-assistant">Watson Assistant</a>: Watson Assistant lets you build conversational interfaces into any application, device, or channel.</p>
-          <p><a href="https://cloud.ibm.com/catalog/services/watson-studio">Watson Studio</a>: Develop sophisticated machine learning models using Notebooks and code-free tools to infuse AI throughout your business.</p>
+          <p>You need to be logged in to your IBM Cloud account in the Developer Playground to create and configure services. Select location as "7. eu-gb".</p>
+          <a class="button is-dark is-medium" title="Login to IBM Cloud" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cibm-login%7Cnodejs%20terminal|ibmcloud%20config%20--check-version=false%20%26%26%20ibmcloud%20login%20-r%20eu-gb%20%26%26%20ibmcloud%20target%20--cf%20%26%26%20ibmcloud%20target%20-g%20Default">Login to IBM Cloud</a>
         </div>
       </div>
       <div class="container right">
         <div class="content">
           <p>Create these services with just a click of button.</p>
-          <a class="button is-dark is-medium" title="Create IBM Watson Services" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=loan$$cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20chmod%20%2Bx%20.%2Fcreate-ibm-services.sh%20%26%26%20.%2Fcreate-ibm-services.sh">Create IBM Watson Services</a>
+          <a class="button is-dark is-medium" title="Create IBM Watson Services" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Ccreate-services%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20chmod%20%2Bx%20.%2Fcreate-ibm-services.sh%20%26%26%20.%2Fcreate-ibm-services.sh">Create IBM Watson Services</a>
         </div>
       </div>
       <div class="container right">
@@ -317,7 +356,7 @@
           <details>
          <summary>Add Data to the Project</summary>
           <p>Step 1 : Load the dataset.</p>
-          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cexplore-code%7C${CHE_PROJECTS_ROOT}/test/data.csv">Load Dataset</a>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-dataset%7C${CHE_PROJECTS_ROOT}/loan/german_credit.csv">Load Dataset</a>
           <p>Step 2 : Download the dataset.</p>
           <a class="button is-dark is-medium"title="Launch the Application" href="didact://?commandId=file.download">Download</a>
           <p>Step 3 : Click on the "Add to project" button on the top right corner.</p>
@@ -343,7 +382,7 @@
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_3.3_add_ml_service_1.png" width = "750" height= "750">
           <p>Step 4 : On the Associate service page, check the box with your machine learning service instance. Next, click on "Associate service" on the right corner.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_3.4_add_ml_service_2.png" width = "750" height= "750">
-          <p>Step 5 : Click on "Create" on the bottom right part of your screen to create your first AutoAI experiment!</p>
+          <p>Step 5 : Click on "Reload" button and once your machine learning service is visible, click on "Create" on the bottom right part of your screen to create your first AutoAI experiment!</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_3.5_create_auto_ai_1.png" width = "750" height= "750">
           </details>
         </div>
@@ -402,14 +441,15 @@
           <details>
          <summary>Deploy Model and Get URL</summary>
           <p>Step 1 : Once the model is successfully promoted, you will see a green notification box, click on “deployment space” in the notification. Alternatively, you can also find your deployment spaces when you click on the hamburger sign on the top left most side on your screen.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_6.1_deployment_space_1.png" width = "750" height= "750">
-          <p>Step 2 : Click on "New deployment" button.</p>
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.1_deploy_1.png" width = "750" height= "750">
+          <p>Step 2 : Click on the deploymentspace you created and click on "New deployment" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.2_deploy_2.png" width = "750" height= "750">
           <p>Step 3 : Select "Online", give your deployment a name and click on "Create" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.3_deploy_3.png" width = "750" height= "750">
           <p>Step 4 : Click on the deployment you just created.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_8.1_get_link_1.png" width = "750" height= "750">
-          <p>Step 5 : Copy the endpoint URL of your model and save it as we will need it later.</p>
+          <p>Step 5 : Copy the endpoint URL of your model and paste it on line 62 in place of "Add your machine learning deployment URL" in the follwing code file.</p>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Capi-key%7C${CHE_PROJECTS_ROOT}/loan/code.txt">Open file</a>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_8.2_get_link_2.png" width = "750" height= "750">
           <p>Step 6 : To test your model, click on the “Test” tab. You can select a row from the data set and enter the data in the fields. Enter the values from the dataset, and then click on the “ Add to Predict” button at the bottom and then on "Predict".</p>
           </details>
@@ -420,7 +460,7 @@
           <details>
          <summary>Generate API Key</summary>
           <p>Click the below button to generate api key through IBM cloud CLI commands.</p><br>
-          <a class="button is-dark is-medium" title="Generate API key" href="didact://?commandId=extension.sendToTerminal&text=LoanAgent%7Cgenerate-api-token%7CLoanAgent|cd%20${CHE_PROJECTS_ROOT}/cpd-intelligent-loan-agent-app;ibmcloud%20iam%20api-key-create%20ApiKey-loanAgent%20-d%20'this is API key for loanAgent'%20--file%20${CHE_PROJECTS_ROOT}/cpd-intelligent-loan-agent-app/key_file">Generate API key</a><br> 
+          <a class="button is-dark is-medium" title="Generate API key" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cgenerate-api-token%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/loan;ibmcloud%20iam%20api-key-create%20ApiKey-loanAgent%20-d%20'this is API key for loanAgent'%20--file%20${CHE_PROJECTS_ROOT}/loan/key_file">Generate API key</a><br> 
           </details>
         </div>
       </div>
@@ -428,7 +468,7 @@
         <div class="content">
           <details>
          <summary>IBM Cloud Functions</summary>
-          <p>Step 1 : Within your IBM Cloud account, click on the top search bar to search for cloud services and offerings. Type in “Functions” and then click on Functions under “Catalog Results”.</p>
+          <p>Step 1 : Within your <a href="https://cloud.ibm.com">IBM Cloud account</a>, click on the top search bar to search for cloud services and offerings. Type in “Functions” and then click on Functions under “Catalog Results”.</p>
           <p>Step 2 : Click on "Current namespace" and "Create Namespace".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_10.1_cloud_function_create_namespace_1.png" width = "750" height= "750">
           <p>Step 3 : Give your namespace a name and click on "Create" button.</p>
@@ -449,13 +489,14 @@
           <p>Step 1 : Once the action is created you will need to add an API KEY under the "Parameters" tab that we created. Click on "Add Parameter".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_11.1_add_paramter_1.png" width = "750" height= "750">
           <p>Step 2 : Add your API key and Click on "Save".</p>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Capi-key%7C${CHE_PROJECTS_ROOT}/loan/key_file">Open API key file</a>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_11.2_add_parameter_2.png" width = "750" height= "750">
-          <p>Step 3 : Under the "Code" tab, paste the below code.</p>
-          <a class="button is-dark is-medium" title="Build the Application" href="didact://?commandId=vscode.didact.copyFileTextToClipboardCommand&extFilePath=projects/loan/code.txt">Copy</a>
-          <p>Step 4 : In the below line, replace the link with your machine learning deployment link. Click on "Save".</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_11.3_add_code_1.png" width = "750" height= "750">
-          <p>Step 5 : Lastly under the "Endpoints" tab, check the "Enable as web action" and copy the public URL.</p>
+          <p>Step 3 : Under the "Code" tab, paste the code from code.txt file.</p>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Ccode%7C${CHE_PROJECTS_ROOT}/loan/code.txt">Open File</a>
+          <p>Step 4 : Lastly under the "Endpoints" tab, check the "Enable as web action" and copy the public URL.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_11.4_enable_web_action_1.png" width = "750" height= "750">
+          <p>Step 5 : Copy the URL and paste it on line 393 of follwing dialog file.</p>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Capi-key%7C${CHE_PROJECTS_ROOT}/loan/Dialog-Skill-Demo.json">Open file</a>
           </details>
         </div>
       </div>
@@ -463,7 +504,7 @@
         <div class="content">
           <details>
          <summary>Integrate the Machine Learning Model with Watson Assistant</summary>
-          <p>Step 1 : From the "Resources" tab on the left, select "Seevices and software" and click on your Watson Assistant service. Then click on "Launch Watson Assistant" button.</p>
+          <p>Step 1 : From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service. Then click on "Launch Watson Assistant" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.1_launch_wa_1.png" width = "750" height= "750">
           <p>Step 2 : Click on "Create assistant".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.2_create_assistant_1.png" width = "750" height= "750">
@@ -472,7 +513,7 @@
           <p>Step 4 : Once your Assistant is created, click on "add an action or dialog skill".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.4_add_dialog_1.png" width = "750" height= "750">
           <p>Step 5 : Load the Dialog Skill.</p>
-          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cexplore-code%7C${CHE_PROJECTS_ROOT}/test/Dialog-Skill-Demo.json">Load Skill</a>
+          <a class="button is-dark is-medium" href="didact://?commandId=extension.openFile&text=loan%7Cload-skill%7C${CHE_PROJECTS_ROOT}/loan/Dialog-Skill-Demo.json">Load Skill</a>
           <p>Step 6 : Download the Dialog Skill.</p>
           <a class="button is-dark is-medium"title="Launch the Application" href="didact://?commandId=file.download">Download</a>
           <p>Step 7 : Upload the skill you just downloaded. When you see that the skill file has been uploaded, click on "Upload" Button.</p>
@@ -490,11 +531,10 @@
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_13.2_integrate_web_chat_2.png" width = "750" height= "750">
           <p>Step 3 : Turn off the "Home screen" switch.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_13.3_integrate_web_chat_3.png" width = "750" height= "750">
-          <p>Step 4 : Click on "Embed" tab and copy the integration_id and service_instance_id in the HTML file.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_13.3_integrate_web_chat_3.png" width = "750" height= "750">
-          <p>Step 5 : Lastly under the "Endpoints" tab, check the "Enable as web action" and copy the public URL.</p>
-          <a class="button is-dark is-medium" title="Explore the Code" href="didact://?commandId=extension.openFile&text=anomal%7Cexplore-code%7C${CHE_PROJECTS_ROOT}/loan/loan.html">Open HTML file</a>
+          <p>Step 4 : Click on "Embed" tab and copy the integration_id and service_instance_id in the HTML file. Click on "Save and Exit"</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_13.4_integrate_web_chat_4.png" width = "750" height= "750">
+          <p>Step 5 : Open the HTML file.</p>
+          <a class="button is-dark is-medium" title="Explore the Code" href="didact://?commandId=extension.openFile&text=loan%7Copen-file%7C${CHE_PROJECTS_ROOT}/loan/loan.html">Open HTML file</a>
           </details>
         </div>
       </div>
@@ -502,28 +542,28 @@
          <div class="content">
             <p>You've successfully cloned the code, so click `Build the application` to start the build process.
             </p>
-            <a class="button is-dark is-medium" title="Build the Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=anomaly$$cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20npm%20install">Build the Application</a>
+            <a class="button is-dark is-medium" title="Build the Application" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cbuild%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20npm%20install">Build the Application</a>
          </div>
       </div>
       <div class="container right">
          <div class="content">
             <p>You're all set to get started! </p>
-            <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=anomaly$$cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20npm%20start">Launch the Application</a>
+            <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cstart%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20npm%20start">Launch the Application</a>
          </div>
       </div>
    </div>
    <div class="footer">
       <div class="content" style="padding:30px;padding-left:60px;padding-bottom:0px;">
          <p>If you'd like to make changes and explore the application, make sure to stop it first!</p>
-         <a class="button is-dark is-medium" title="Stop Application" href="didact://?commandId=vscode.didact.sendNamedTerminalCtrlC&text=anomaly">Stop Application</a>
+         <a class="button is-dark is-medium" title="Stop Application" href="didact://?commandId=vscode.didact.sendNamedTerminalCtrlC&text=nodejs%20terminal">Stop Application</a>
          <p class="afterbutton">The stage is yours!</p>
-         <a class="button is-dark is-medium" title="Explore the Code" href="didact://?commandId=extension.openFile&text=anomal%7Cexplore-code%7C${CHE_PROJECTS_ROOT}/loan/serer.js">Explore the Code</a>
+         <a class="button is-dark is-medium" title="Explore the Code" href="didact://?commandId=extension.openFile&text=loan%7Copen-file%7C${CHE_PROJECTS_ROOT}/loan/server.js">Explore the Code</a>
          <p class="afterbutton ">To view the changes you've made, re-launch the application</p>
-         <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=vscode.didact.sendNamedTerminalAString&text=anomaly$$cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20npm%20start">Re-Launch the Application</a>
+         <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20launch%7Cbuild%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20npm%20start">Re-Launch the Application</a>
          <p style="margin-top:10px;"> Completed the code pattern? Click on
           <bold>Clean up</bold> to delete the IBM Cloud services that were created.
         </p>
-        <a class="button is-dark is-medium" title="Delete services from IBM Cloud" href="didact://?commandId=extension.sendToTerminal&text=LoanAgent%7Cget-code%7CLoanAgent|chmod%20%2Bx%20.%2Fdeleteservice.sh%20%26%26%20.%2Fdeleteservice.sh">Clean up</a>
+        <a class="button is-dark is-medium" title="Delete services from IBM Cloud" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cdelete-services%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/loan%20%26%26%20chmod%20%2Bx%20.%2Fdelete_services.sh%20%26%26%20.%2Fdelete_services.sh">Clean up</a>
         <p style="margin-top:10px;">You can also manage the services in
           <a href="https://cloud.ibm.com/resources">IBM Cloud Dashboard</a>.
         </p>
