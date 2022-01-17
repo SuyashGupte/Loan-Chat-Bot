@@ -278,7 +278,7 @@
           Precision agriculture is in trend nowadays. It helps the farmers to get informed decision about the farming strategy. Precision agriculture is a modern farming technique that uses research data of soil characteristics, soil types, crop yield data collection and suggests the farmers the right crop based on their site-specific parameters. This reduces the wrong choice on a crop and increase in productivity.
         </div>
         <div>
-          Now a days businesses also use chatbots to increase productivity and provide a better customer experience. This demo aims to automate the banking experience for customers regarding loan applications using Watson Studio machine learning, Cloud function.
+          Now a days businesses also use chatbots to increase productivity and provide a better customer experience. This demo aims to automate the crop selection process using Watson Studio machine learning, Cloud function.
         </div>
      </div>
    </div>
