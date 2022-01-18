@@ -285,11 +285,9 @@
    <div class="section">
     <p style="font-size:20px">Learning Resources</p>
     <div class="content-">
-      <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=projects-creating-project">Create a new project in Cloud Paks for Data Platform.</a></br>
-      <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=data-adding-analytics-project">Add data to project in Cloud Paks for Data Platform.</a></br>
-      <a href="https://www.ibm.com/docs/en/cloud-paks/cp-data/4.0?topic=functions-deployment-spaces">Create Deployment Spaces.</a></br>
-      <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-assistant-add">Creating an Watson Assistant.</a></br>
-      <a href="https://cloud.ibm.com/docs/assistant?topic=assistant-skill-add">Adding Skills to your assistant.</a>
+      <a href="https://developer.ibm.com/learningpaths/learning-path-machine-learning-for-developers/">Get Started with Machine Learning</a></br>
+      <a href="https://developer.ibm.com/learningpaths/get-started-watson-studio/">Get Started with Watson Studio </a></br>
+      <a href="https://developer.ibm.com/learningpaths/explore-autoai/">Use AutoML to find and deploy the best models in minutes</a>
     </div>
    </div>
    <div class="section">
