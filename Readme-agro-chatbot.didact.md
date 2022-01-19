@@ -417,7 +417,7 @@
          <summary>Integrate the Machine Learning Model with Watson Assistant</summary>
           <p>Step 1 : Go to <a href="https://cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Click on "Launch Watson Assistant" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.1_launch_wa_1.png" width = "750" height= "750">
-          <p>Step 2 : Click on "Create assistant".</p>
+          <p>Step 2 : Click on "Create assistant". If you see a different screen, click on the profile icon on top right and select the "Switch to classic experience" option.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.2_create_assistant_1.png" width = "750" height= "750">
           <p>Step 3 : Give your assistant a name and click on "Create assistant".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.3_create_assistant_2.png" width = "750" height= "750">
