@@ -75,7 +75,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the Nitrogen Level of your soil?"
+            "What is the Nitrogen ratio of your soil? (Range: 0-140)"
           ],
           "selection_policy": "sequential"
         },
@@ -83,7 +83,7 @@
           {
             "values": [
               {
-                "text": "What is the Nitrogen Level of your soil?"
+                "text": "What is the Nitrogen ratio of your soil? (Range: 0-140)"
               }
             ],
             "response_type": "text",
@@ -101,7 +101,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the Phosphorus Level of your soil?"
+            "What is the Phosphorus ratio of your soil? (Range: 0-145)"
           ],
           "selection_policy": "sequential"
         },
@@ -109,7 +109,7 @@
           {
             "values": [
               {
-                "text": "What is the Phosphorus Level of your soil?"
+                "text": "What is the Phosphorus ratio of your soil? (Range: 0-145)"
               }
             ],
             "response_type": "text",
@@ -127,7 +127,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the Potassium Level of your soil?"
+            "What is the Potassium ratio of your soil? (Range: 0-205)"
           ],
           "selection_policy": "sequential"
         },
@@ -135,7 +135,7 @@
           {
             "values": [
               {
-                "text": "What is the Potassium Level of your soil?"
+                "text":  "What is the Potassium ratio of your soil? (Range: 0-205)"
               }
             ],
             "response_type": "text",
@@ -153,7 +153,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the Temperature in your area(in °C)?"
+            "What is the Temperature in your area(in °C)? (Range: 8-50)"
           ],
           "selection_policy": "sequential"
         },
@@ -161,7 +161,7 @@
           {
             "values": [
               {
-                "text": "What is the Temperature in your area(in °C)?"
+                "text": "What is the Temperature in your area(in °C)? (Range: 8-50)"
               }
             ],
             "response_type": "text",
@@ -179,7 +179,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the Humidity percentage in your area?"
+            "What is the Humidity percentage in your area? (Range: 0-100)"
           ],
           "selection_policy": "sequential"
         },
@@ -187,7 +187,7 @@
           {
             "values": [
               {
-                "text": "What is the Humidity percentage in your area?"
+                "text": "What is the Humidity percentage in your area? (Range: 0-100)"
               }
             ],
             "response_type": "text",
@@ -205,7 +205,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the pH of soil?"
+            "What is the pH of soil? (Range: 3-10)"
           ],
           "selection_policy": "sequential"
         },
@@ -213,7 +213,7 @@
           {
             "values": [
               {
-                "text": "What is the pH of soil?"
+                "text": "What is the pH of soil? (Range: 3-10)"
               }
             ],
             "response_type": "text",
@@ -231,7 +231,7 @@
       "output": {
         "text": {
           "values": [
-            "What is the Rainfall in your area?"
+            "What is the Rainfall in your area (in mm)? (Range: 20-300)"
           ],
           "selection_policy": "sequential"
         },
@@ -239,7 +239,7 @@
           {
             "values": [
               {
-                "text": "What is the Rainfall in your area?"
+                "text":  "What is the Rainfall in your area (in mm)? (Range: 20-300)"
               }
             ],
             "response_type": "text",

@@ -124,7 +124,7 @@
     min-height: 100%;
     min-width: 100%;
     object-fit: cover;
-    object-position: 250% 100px;
+    object-position: 2500% 1000px;
     opacity: 15%;
     bottom: 15px;
   }
@@ -140,7 +140,7 @@
     background-color: white;
     min-width: 50%;
     background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("https://raw.githubusercontent.com/IBM/Developer-Playground/master/didact/images/github.svg");
-    background-position: -50% 60px;
+    background-position: -250% 100px;
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-left: 20px;
@@ -183,7 +183,7 @@
     background-image: url('https://raw.githubusercontent.com/IBM/Developer-Playground/development/didact/images/anomaly.jpeg');
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 350px;
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -197,10 +197,11 @@
     float: right;
     width: 45%;
     background-color:#0072C3;
-    min-height: 300px;
+    min-height: 350px;
     padding: 20px;
-    padding-top: 2.5%;
+    padding-top: 5%;
     font-size: 14px;
+    justify-content:center;
   }
   .header .right-content h4
   {
@@ -227,7 +228,7 @@
   }
   .container a
   {
-     color: #78A9FF;
+    color: #78A9FF;
     background-color: transparent;
     text-decoration: none;
   }
@@ -439,23 +440,23 @@
          <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the Machine Learning Model with Watson Assistant</summary></br></br>
           <div class="step">
           <p>Step 1 : Go to <a href="https://cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Click on "Launch Watson Assistant" button.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_3.1_assistant.png" width = "750" height= "750">
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_4.1_assistant.png" width = "750" height= "750">
           </div>
           <div class="step">
           <p>Step 2 : If this screen is visible, click on the profile icon and click on "Switch to classic experience".</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_3.2_assistant.png" width = "750" height= "750">
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_4.2_assistant.png" width = "750" height= "750">
           </div>
           <div class="step">
           <p>Step 2 : Click on "Create assistant".</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_3.3_assistant.png" width = "550" height= "550">
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_4.3_assistant.png" width = "550" height= "550">
           </div>
           <div class="step">
           <p>Step 3 : Give the assistant a name and click on "Create assistant".</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_3.4_assistant.png" width = "550" height= "550">
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_4.4_assistant.png" width = "550" height= "550">
           </div>
           <div class="step">
           <p>Step 4 : Once the Assistant is created, click on "add an action or dialog skill".</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_3.5_assistant.png" width = "750" height= "750">
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_4.5_assistant.png" width = "750" height= "750">
           </div>
           <div class="step">
           <p>Step 5 : Load the Dialog Skill.</p>
@@ -467,7 +468,7 @@
           </div>
           <div class="step">
           <p>Step 7 : Upload the skill that was just downloaded. When the skill file is uploaded, click on "Upload" Button.</p>
-          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_3.6_assistant.png" width = "750" height= "750">
+          <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Didact%20Images/section_4.6_assistant.png" width = "750" height= "750">
           </div>
           </details>
         </div>
@@ -513,8 +514,8 @@
          <a class="button is-dark is-medium" title="Explore the Code" href="didact://?commandId=extension.openFile&text=loan%7Copen-file%7C${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant/public/index.html">Explore the Code</a>
          <p class="afterbutton ">To view the changes you've made, re-launch the application</p>
          <a class="button is-dark is-medium" title="Launch the Application" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20launch%7Cbuild%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant%20%26%26%20npm%20start">Re-Launch the Application</a>
-         <p style="margin-top:10px;"> Completed the code pattern? Click on
-          <bold>Clean up</bold> to delete the IBM Cloud services that were created.
+         <p style="margin-top:10px;"> Completed the tutorial? Click on
+          <bold>Clean up</bold> to delete the IBM Cloud services that were created. Make sure to stop the application first!
         </p>
         <a class="button is-dark is-medium" title="Delete services from IBM Cloud" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Cdelete-services%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant%20%26%26%20chmod%20%2Bx%20.%2Fscripts%2Fdelete_services.sh%20%26%26%20.%2Fscripts%2Fdelete_services.sh">Clean up</a>
         <p style="margin-top:10px;">You can also manage the services in
@@ -525,28 +526,6 @@
          <p class="image-content">Want to explore this project more?
             <span style="font-size:15px;margin-top:0px;display:block;">Head over to the <a href="https://github.com/Anam-Mahmood/Unlock-the-Power-of-Machine-Learning-in-Virtual-Assistants-to-automate-Loan-Applications" target="_blank">Github Repository</a></span>
          </p>
-         <div class="image-btn">
-            <a class="image-link" href="didact://?commandId=extension.openURL&text=anomaly%7Cview-product-details%7Chttps://www.ibm.com/products
-               " target="_blank">
-               View Product Details 
-               <span>
-                  <svg style="position: absolute; right: 10px;" fill="#ffffff" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/  svg" width="25" height="25" viewBox="0 0 32 32" aria-hidden="true">
-                     <path d="M18 6L16.6 7.4 24.1 15 3 15 3 17 24.1 17 16.6 24.6 18 26 28 16z"></path>
-                     <title>Arrow right</title>
-                  </svg>
-               </span>
-            </a>
-            <a class="image-link" href="didact://?commandId=extension.openURL&text=anomaly%7Cget-trial-subscription%7Chttps://www.ibm.com/account/reg/us-en/signup?formid=urx-51009" target="_blank">
-               Get Trial Subcription 
-               <span>
-                  <svg style="position: absolute; right: 10px;" fill="#ffffff" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/  svg" width="25" height="25" viewBox="0 0 32 32" aria-hidden="true">
-                     <path d="M18 6L16.6 7.4 24.1 15 3 15 3 17 24.1 17 16.6 24.6 18 26 28 16z"></path>
-                     <title>Arrow right</title>
-                  </svg>
-               </span>
-            </a>
-            <a class="image-link no-hover"></a>
-         </div>
       </div>
    </div>
    <br><br>
