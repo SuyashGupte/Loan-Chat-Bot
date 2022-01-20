@@ -1,4 +1,5 @@
 ibmcloud fn action delete ml
+ibmcloud fn namespace delete smart-assistant
 
 servicename="cp-cos"
 ibmcloud resource service-instance-delete $servicename -f --recursive
