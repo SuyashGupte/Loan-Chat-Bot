@@ -7,12 +7,12 @@ then
     echo "Internal Account Selected"
     ibmcloud config --check-version=false
     ibmcloud login -r us-south --sso
-    ibmcloud target --cf
-    ibmcloud target -g Default
+    ibmcloud target -r us-south --cf
+    ibmcloud target -r us-south -g Default
 else
-    echo "External Account"
+    echo "External Account Selected"
     ibmcloud config --check-version=false
     ibmcloud login -r us-south
-    ibmcloud target --cf
-    ibmcloud target -g Default
+    ibmcloud target -r us-south --cf
+    ibmcloud target -r us-south -g Default
 fi

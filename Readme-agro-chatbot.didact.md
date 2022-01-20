@@ -417,7 +417,7 @@
          <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configure Cloud Functions</summary></br></br>
           <div class="step">
            <p>Step 1 : Create an Action in cloud functions with web action enabled.</p>
-           <a class="button is-dark is-medium" title="Create Action" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Ccreate-action%7Cnodejs%20terminal|ibmcloud%20fn%20action%20create%20ml%20code.py%20--kind%20python:3.7%20--web%20true">Create Action</a>
+           <a class="button is-dark is-medium" title="Create Action" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Ccreate-action%7Cnodejs%20terminal|cd%20${CHE_PROJECTS_ROOT}/cp4d-smart-virtual-assistant%20%26%26%20chmod%20%2Bx%20.%2Fscripts%2Fcreate_action.sh%20%26%26%20.%2Fscripts%2Fcreate_action.sh">Create Action</a>
            </div>
           <div class="step">
            <p>Step 2: Generate an API Key in the IBM account by clicking this button.</p>
