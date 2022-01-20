@@ -1,3 +1,4 @@
+ibmcloud fn action delete ml
 servicename="cp-cos"
 ibmcloud resource service-instance-delete $servicename -f
 

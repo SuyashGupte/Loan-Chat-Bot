@@ -262,6 +262,21 @@
     margin-top: 5px;
     margin-bottom:-50px;
   }
+  summary{
+    float:left;
+  }
+  details > summary {
+    list-style-image: url("https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/32-up.svg");
+    direction:rtl;
+  }
+  .dropdown-icon{
+    position:relative;
+    left:50px; 
+    top:4px;
+  }
+  details[open] > summary {
+      list-style-image: url("https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/32-down.svg");
+  }
 }
 </style>
 </head>
@@ -343,7 +358,9 @@
       <div class="container right">
         <div class="content">
         <details>
-         <summary>Create a New Project</summary>
+         <summary>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a New Project
+         </summary></br>
          <p>Step 1 : Download the project zip file.</p>
           <a class="button is-dark is-medium" href="https://github.com/SuyashGupte/Loan-Chat-Bot/raw/main/crop-recommendation.zip">Download</a>
           <p>Step 2 : Click on "Create a Project".</p>
@@ -360,7 +377,7 @@
       <div class="container right">
         <div class="content">
           <details>
-         <summary>Promote Model and Create a Deployment Space</summary>
+         <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Promote Model and Create a Deployment Space</summary>
           <p>Step 1 : Click on the assets tab.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_4.png" width = "750" height= "750">
           <p>Step 2 : Click on the (⋮) on right hand side of the Model and Click on "Promote" button.</p>
@@ -379,7 +396,7 @@
       <div class="container right">
         <div class="content">
           <details>
-         <summary>Deploy Model and Get URL</summary>
+         <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deploy Model and Get URL</summary>
           <p>Step 1 : Click on "New deployment" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_7.2_deploy_2.png" width = "750" height= "750">
           <p>Step 2 : Select "Online", give your deployment a name and click on "Create" button.</p>
@@ -399,7 +416,7 @@
       <div class="container right">
         <div class="content">
           <details>
-         <summary>Configure Cloud Functions</summary>
+         <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configure Cloud Functions</summary>
            <p>Step 1 : Create an Action in cloud functions with code.py function and web action enabled.</p>
            <a class="button is-dark is-medium" title="Create Action" href="didact://?commandId=extension.sendToTerminal&text=nodejs%20terminal%7Ccreate-action%7Cnodejs%20terminal|ibmcloud%20fn%20action%20create%20ml%20code.py%20--kind%20python:3.7%20--web%20true">Create Action</a>
            <p>Step 2: Generate an API Key in your IBM account by clicking this button.</p>
@@ -414,7 +431,7 @@
       <div class="container right">
         <div class="content">
           <details>
-         <summary>Integrate the Machine Learning Model with Watson Assistant</summary>
+         <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integrate the Machine Learning Model with Watson Assistant</summary>
           <p>Step 1 : Go to <a href="https://cloud.ibm.com">your IBM Cloud Account</a>. From the "Resources" tab on the left, select "Services and software" and click on your Watson Assistant service.Click on "Launch Watson Assistant" button.</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/section_12.1_launch_wa_1.png" width = "750" height= "750">
           <p>Step 2 : Click on "Create assistant". If you see a different screen, click on the profile icon on top right and select the "Switch to classic experience" option.</p>
@@ -435,7 +452,7 @@
       <div class="container right">
         <div class="content">
           <details>
-         <summary>Configure the application</summary>
+         <summary>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Configure the application</summary>
            <p>Step 1 : Once the skill is created, click on (⋮) on top right and Click on "Assitant Settings".</p>
           <img src = "https://raw.githubusercontent.com/SuyashGupte/Loan-Chat-Bot/main/Smart%20Loan%20Assistant%20Images/project_new_8.png" width = "750" height= "750">
           <p>Step 2 : Copy the Assistant ID, Assistant URL and API key in env .file.</p>
