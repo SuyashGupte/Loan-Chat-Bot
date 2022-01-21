@@ -140,7 +140,7 @@
     background-color: white;
     min-width: 50%;
     background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url("https://raw.githubusercontent.com/IBM/Developer-Playground/master/didact/images/github.svg");
-    background-position: -250% 100px;
+    background-position: -70px 200px;
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-left: 20px;
@@ -278,7 +278,6 @@
   details{
       margin-bottom: 20px;
   }
-}
 </style>
 </head>
 <body>
@@ -308,7 +307,7 @@
       <p style="font-size:20px">Included Components</p>
       <div class="content-">
           <p>This sample application uses the following IBM Services:</p>
-          <p><a href="https://cloud.ibm.com/objectstorage">Cloud Object Storage</a>: Object storage organizes data into buckets. A service instance is logical grouping of buckets.</p>
+          <p><a href="https://cloud.ibm.com/objectstorage">Cloud Object Storage</a>: IBM Cloud Object Storage is a highly scalable cloud storage service, designed for high durability, resiliency and security.</p>
           <p><a href="https://cloud.ibm.com/catalog/services/watson-assistant">Watson Assistant</a>: Watson Assistant lets you build conversational interfaces into any application, device, or channel.</p>
           <p><a href="https://cloud.ibm.com/catalog/services/machine-learning">Watson Machine Learning</a>: Deploy, manage and integrate machine learning models into your applications and services in as little as one click.</p>
       </div>
@@ -321,11 +320,12 @@
    </div>
     <div class="section">
    <p style="font-size:20px">Instructions</p>
+   <p>Follow all the below steps in proper sequence to avoid failure.</p>
    </div>
    <div class="timeline">
    <div style="margin-top:0;"class="container right">
             <div class="content">
-                <p>To begin, open a terminal</p>
+                <p>To begin, open a pre-configured terminal.</p>
                 <a class="button is-dark is-medium" title="Open Terminal" href="didact://?commandId=terminal-for-nodejs-container:new">Open Terminal</a><br>
             </div>
         </div>
@@ -350,7 +350,7 @@
       </div>
       <div class="container right">
         <div class="content">
-          <p>Go to <a href="https://dataplatform.cloud.ibm.com/">IBM CloudPak for data</a> and login with your IBM id. </p> Once you login follow the below steps to create a new project.
+          <p>Go to <a href="https://dataplatform.cloud.ibm.com/">IBM CloudPak for Data</a> and login with your IBM id. </p> Once you login follow the below steps to create a new project.
         </div>
       </div>
       <div class="container right">
