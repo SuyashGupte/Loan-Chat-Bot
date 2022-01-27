@@ -485,3 +485,8 @@ html{
   background-color: #0f62fe;;
   color: white;
 }
+
+.app-header{
+  background-color: black;
+  font-size:24px;
+}
